@@ -1,0 +1,7 @@
+apiVersion: tekton.dev/v1beta1
+kind: PipelineRun
+metadata:
+  generateName: run-simple-tasks
+spec:
+  pipelineRef:
+    name: simple-pipeline
