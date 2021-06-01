@@ -1,0 +1,19 @@
+
+apiVersion: tekton.dev/v1beta1
+kind: Task
+metadata:
+  name: simple-task-example
+spec:
+  steps:
+    - name: echo
+      image: ubuntu
+      command:
+        - echo
+      args:
+        - "This is step one of our first simple task example"
+    - name: echo2
+      image: ubuntu
+      command:
+        - echo
+      args:
+        - "This is step two of our first simple task example"

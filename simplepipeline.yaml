@@ -1,0 +1,13 @@
+
+apiVersion: tekton.dev/v1beta1
+kind: Pipeline
+metadata:
+  name: simple-pipeline
+spec:
+  tasks:
+    - name: simple-task
+      taskRef:
+        name: simple-task-example
+    - name: simple-task2
+      taskRef:
+        name: simple-task-example2
